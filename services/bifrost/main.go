@@ -302,7 +302,7 @@ func createServer(cfg config.Config, stressTest bool) *server.Server {
 				os.Exit(-1)
 			}
 
-			bitcoinListener.Enabled = true
+			bitcoinListener.Enabled = false
 			bitcoinListener.Testnet = cfg.Bitcoin.Testnet
 			server.MinimumValueBtc = cfg.Bitcoin.MinimumValueBtc
 
